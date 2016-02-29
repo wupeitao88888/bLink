@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/relativelayout_right_angle"
+        android:paddingBottom="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/userinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--用户头像 -->
+            <ImageView
+                android:id="@+id/changepic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="@color/gray" />
+
+            <!--用户姓名 -->
+            <TextView
+                android:id="@+id/changeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/black_e1"
+                android:layout_toRightOf="@+id/changepic" />
+
+
+            <TextView
+                android:id="@+id/changAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+               android:textSize="13dp"
+                android:textColor="@color/black_e1"/>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/changeUrl"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/userinfo"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changeUrl"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:background="@mipmap/have" />
+
+
+            <TextView
+                android:id="@+id/mineGoods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="13dp"
+                android:textColor="@color/black_e1"
+                android:layout_toRightOf="@+id/exist" />
+
+
+            <TextView
+                android:id="@+id/exchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exist"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/change" />
+
+
+            <TextView
+                android:id="@+id/exchangeGoods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="@color/black_e1"
+                android:layout_alignBottom="@+id/exchange"
+                android:layout_toRightOf="@+id/exchange" />
+
+            <Button
+                android:id="@+id/look_info"
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_normal"
+                android:text="查看详情"
+                android:textColor="@drawable/selector_button_normal"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/help_shiquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="26.6dp"
+        android:layout_marginLeft="26.6dp"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/shanwuhezuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/help_shiquan"
+        android:layout_marginRight="26.6dp"
+        android:layout_marginLeft="26.6dp"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/iamge_code"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/shanwuhezuo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/caonidy"/>
+
+    <TextView
+        android:id="@+id/weixinhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iamge_code"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="微信号：chinababylink"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/guanzunmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weixinhao"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="更多关注微信号回复反馈"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

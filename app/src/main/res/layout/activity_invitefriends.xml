@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context="com.shiliuke.BabyLink.InvitefriendsActivity">
+
+    <com.shiliuke.view.PullToRefresh.PullToRefreshLayout
+        android:id="@+id/invitefriends_pulltorefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/refresh_head"/>
+
+        <com.shiliuke.view.PullToRefresh.NOViewPagerPullableListView
+            android:id="@+id/list_invitefriends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include layout="@layout/load_more"/>
+    </com.shiliuke.view.PullToRefresh.PullToRefreshLayout>
+</RelativeLayout>

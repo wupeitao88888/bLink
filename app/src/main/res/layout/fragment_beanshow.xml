@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/ding"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/RED_TEXT"
+            android:enabled="false"
+            android:id="@+id/btn_beanshow_link"
+            android:background="@drawable/btn_xiudou_link_selector"
+            android:text="Link"
+            />
+
+        <Button
+            android:background="@drawable/btn_xiudou_link_selector"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:id="@+id/btn_beanshow_public"
+            android:text="广场"
+            />
+
+    </LinearLayout>
+
+    <com.shiliuke.view.PullToRefresh.PullToRefreshLayout
+        android:id="@+id/beanshow_PullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head"/>
+
+        <com.shiliuke.view.PullToRefresh.NOViewPagerPullableListView
+            android:id="@+id/listview_beanshow"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/dp5"
+            android:dividerHeight="@dimen/dp5"
+            android:divider="@color/background"
+            android:layout_height="match_parent"/>
+
+        <include layout="@layout/load_more"/>
+    </com.shiliuke.view.PullToRefresh.PullToRefreshLayout>
+
+
+</LinearLayout>

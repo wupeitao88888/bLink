@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Babylink</string>
+    <string name="vistion">1.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_myHouse">本小区</string>
+    <string name="tab_dshow">秀逗</string>
+    <string name="tab_find">发现</string>
+    <string name="tab_me">我</string>
+    <string name="tab_exercise">活动</string>
+    <string name="tab_topic">话题</string>
+    <string name="tab_change">置换</string>
+    <string name="login">登录</string>
+    <string name="registe">注册</string>
+    <string name="confirm">确定</string>
+    <string name="log_off">注销登录</string>
+
+    <!-- 完善资料 -->
+    <string name="information">完善资料</string>
+    <string name="select_city">请选择您所在的城市</string>
+    <string name="select_area">请选择您所在的小区</string>
+    <string name="insert_name">请输入宝宝昵称或名字</string>
+    <string name="select_sex">请选择宝宝性别</string>
+    <string name="select_date">请选择宝宝出生日期</string>
+    <string name="select_relations">请选择您与宝宝的关系</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+
+    <string name="subject_activity">活动主题:</string>
+    <string name="activity_address">活动地点:</string>
+    <string name="activity_time">报名截止时间:</string>
+    <string name="assemble_time">集合时间:</string>
+    <string name="assemble_address">集合地点:</string>
+    <string name="means_of_transportation">交通工具:</string>
+    <string name="contact_man">联系人:</string>
+    <string name="contact_phone">联系电话:</string>
+    <string name="max_person">上限人数:</string>
+    <string name="cost_issue">报名费用:</string>
+    <string name="method_of_payment">支付方式:</string>
+    <string name="add_pic">添加活动主图</string>
+    <string name="activity_hint">输入活动介绍</string>
+    <string name="hold_out">需要活动支持</string>
+    <string name="need">请输入所需要的物品</string>
+    <string name="change_article">请输入置换物品描述</string>
+    <string name="change_article_name">请输入物品名称</string>
+    <string name="change_want_article_name">请输入想换的物品名称</string>
+    <string name="certain">确定</string>
+    <string name="all_person">所有人可见</string>
+    <string name="me_home">本小区可见</string>
+
+    <string name="exit">再按一次退出程序</string>
+    <string name="aquire_auth_code">获取验证码</string>
+    <string name="reacquire">重新获取</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="title_activity_html_text">HtmlTextActivity</string>
+    <string name="title_activity_invit_list">InvitListActivity</string>
+    <string name="title_activity_me_order_des">MeOrderDesActivity</string>
+    <string name="title_activity_cut_image">CutImageActivity</string>
+    <string name="about_text_introduces">\t\t Babylink 亲子社交平台是北京石榴客科技有限公司旗下产品，我们致力于为1到6岁家庭提供亲子相关服务，
+        让孩子找到身边适合自己的玩伴，以孩子为纽带，活化邻里关系，通过关系的建立，一起参与相关的亲子项目，从根本上解决亲子消费过高的问题。\n\t\tBabylink亲子
+        社交平台的建立，是看到了中国严重的亲子冲突问题，这是没有与孩子良好的沟通以及没有建立一个良好的平等关系造成的，我们希望通过我们的努力，让孩子与父母之间，
+        孩子与孩子之间，以及父母与父母之间收获属于他们的那份特殊的友谊，让孩子有一个没有缺失，丰富多彩的童年。</string>
+    <string name="about_buttom">Copyright©2015\n北京石榴客科技有限公司</string>
+
+</resources>

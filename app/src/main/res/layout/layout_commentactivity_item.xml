@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="13dp">
+
+        <ImageView
+            android:id="@+id/member_avar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:background="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/member_avar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/member_avar"
+            android:textColor="@color/black_e1"
+            android:textSize="13dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/add_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/member_name"
+            android:layout_marginRight="15dp"
+            android:textColor="#807E7F"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_time"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/member_avar"
+            android:textColor="#807E7F"
+            android:textSize="13dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/info"
+            android:background="@color/gray" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

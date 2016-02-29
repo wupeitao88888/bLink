@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:id="@+id/convert_code_title"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mconvert_code_unconsume"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="未消费"
+
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_viewpager_change"
+            android:textColor="@drawable/selector_button"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/convert_code_consume"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="已消费"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/button_viewpager_change"
+            android:textColor="@drawable/selector_button"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <com.shiliuke.view.IndexViewPager
+        android:id="@+id/convert_code_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/convert_code_title"></com.shiliuke.view.IndexViewPager>
+
+
+</RelativeLayout>

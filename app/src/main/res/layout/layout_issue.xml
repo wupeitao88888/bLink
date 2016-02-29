@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/subject_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/star"
+                    android:text="@string/subject_activity"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/subject_activity_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/subject_activity"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/starq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/activity_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/starq"
+                    android:text="@string/activity_address"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/activity_address_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/activity_address"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/starw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/activity_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/starw"
+                    android:text="@string/activity_time"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <TextView
+                    android:id="@+id/activity_time_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBottom="@+id/activity_time"
+                    android:layout_toRightOf="@+id/activity_time"
+                    android:background="@color/background"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/assemble_content"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/starws"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/assemble_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/starws"
+                    android:text="集合时间"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <TextView
+                    android:id="@+id/assemble_time_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBottom="@+id/assemble_time"
+                    android:layout_toRightOf="@+id/assemble_time"
+                    android:background="@color/background"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/stare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/assemble_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/stare"
+                    android:text="@string/assemble_address"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/assemble_address_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/assemble_address"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/starr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/means_of_transportation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/starr"
+                    android:text="@string/means_of_transportation"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/means_of_transportation_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/means_of_transportation"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/contact_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/start"
+                    android:text="@string/contact_man"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/contact_man_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/contact_man"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/stary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/stary"
+                    android:text="@string/contact_phone"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/contact_phone_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="phone"
+                    android:layout_toRightOf="@+id/contact_phone"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/staru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/max_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/staru"
+                    android:text="@string/max_person"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/max_person_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/max_person"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/stari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/cost_issue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/stari"
+                    android:text="@string/cost_issue"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+
+                <EditText
+                    android:id="@+id/cost_issue_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_toRightOf="@+id/cost_issue"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:paddingRight="60dp"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="元/人"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="20dp"
+    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/staro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="*"
+                    android:textColor="#E77CA4"
+                    android:textSize="15sp"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/method_of_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/staro"
+                    android:text="@string/method_of_payment"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"/>
+
+
+                <EditText
+                    android:id="@+id/method_of_payment_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/method_of_payment"
+                    android:background="@color/background"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/activity_issue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_normal"
+                    android:text="下一步"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

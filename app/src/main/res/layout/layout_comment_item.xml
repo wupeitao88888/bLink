@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <!--<TextView
+        android:id="@+id/commentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:text="WeChat"
+        android:textColor="#383838"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/commentReply_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:text="回复"
+        android:textColor="@color/gray"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/commentReplyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:text="评论一:"
+        android:textColor="#383838"
+        android:textSize="14.0sp" />-->
+
+    <TextView
+        android:id="@+id/commentContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:text="谢谢。"
+        android:textColor="#7888a9"
+        android:textSize="14.0sp" />
+</LinearLayout>

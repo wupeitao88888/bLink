@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:background="@color/background"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp20"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/image_item_find_topbg"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="60dp"
+                android:visibility="gone"
+                android:layout_height="60dp"
+                android:background="@mipmap/bg_find_item_lefttop"
+                android:paddingTop="@dimen/dp5"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:id="@+id/tv_item_find_top"
+                android:layout_marginLeft="@dimen/dp5"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:paddingBottom="30dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item_find_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/red"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_find_des_jiage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:text="价格："
+                    android:layout_toLeftOf="@id/tv_item_find_price"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:id="@+id/tv_item_find_title"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@id/tv_find_des_jiage"
+                    android:layout_marginRight="@dimen/dp10"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/divider_horizontal"/>
+
+            <RelativeLayout
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/tv_item_find_distance"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_alignParentRight="true"
+                    android:text="geaga"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:id="@+id/tv_item_find_address"
+                    android:drawableLeft="@mipmap/icon_find_address_left"
+                    android:drawablePadding="@dimen/dp5"
+                    android:textColor="@color/black"
+                    android:layout_toLeftOf="@id/tv_item_find_distance"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingTop="@dimen/dp5"
+                android:paddingBottom="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/black"
+                    android:text="截止时间:"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:id="@+id/tv_find_des_dead_line"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_toRightOf="@id/tv_find_des_dead_line"
+                    android:id="@+id/tv_find_des_deadline"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_find_des_reserve"
+                    android:text="预定"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_find_des_yuding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_toLeftOf="@id/tv_find_des_reserve"
+                    android:textColor="@color/RED_TEXT"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_find_des_daojishi"
+                android:layout_width="match_parent"
+                android:weightSum="6"
+                android:paddingTop="@dimen/dp10"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="还剩"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/text_biankuang"
+                    android:padding="@dimen/dp10"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_find_des_day"
+                        android:textColor="@color/RED_TEXT"
+                        android:textSize="@dimen/sp20"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="天"
+                        android:textSize="@dimen/sp16"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:background="@drawable/text_3biankuang"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_find_des_hour"
+                        android:textColor="@color/RED_TEXT"
+                        android:textSize="@dimen/sp20"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小时"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:background="@drawable/text_3biankuang"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_find_des_minute"
+                        android:textColor="@color/RED_TEXT"
+                        android:textSize="@dimen/sp20"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textSize="@dimen/sp16"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:background="@drawable/text_3biankuang"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tv_find_des_second"
+                        android:textColor="@color/RED_TEXT"
+                        android:textSize="@dimen/sp20"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="秒"
+                        android:textSize="@dimen/sp16"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_find_des_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/text_biankuang"
+            android:text="邀请好友"
+            android:clickable="true"
+            android:textColor="@color/darkslategrey"
+            />
+        <!--android:onClick="click"-->
+        <!--android:drawableRight="@mipmap/icon_find_des_xiala"-->
+
+        <LinearLayout
+            android:id="@+id/layout_find_des_yaoqing"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_find_des_village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:background="@drawable/text_bk_lrb"
+                android:textColor="@color/darkslategrey"
+                android:text="小区好友"
+                android:clickable="true"
+                android:onClick="click"
+                android:drawableRight="@mipmap/youjianhese"
+                />
+
+            <RelativeLayout
+                android:background="@drawable/text_bk_lrb"
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp5"
+                android:layout_below="@+id/three_text"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_share_wxpyq"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/login_wxpyq"/>
+
+                <TextView
+                    android:id="@+id/tv_share_wx"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/tv_share_wxpyq"
+                    android:background="@mipmap/login_wx"/>
+
+                <TextView
+                    android:id="@+id/tv_share_qq"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/tv_share_wx"
+                    android:background="@mipmap/login_qq"/>
+
+                <TextView
+                    android:id="@+id/tv_share_sina"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/tv_share_qq"
+                    android:background="@mipmap/login_sina"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_find_des_goods"
+            android:drawableRight="@mipmap/youjianhese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/darkslategrey"
+            android:layout_margin="@dimen/dp5"
+            android:background="@drawable/text_biankuang"
+            android:clickable="true"
+            android:onClick="click"
+            android:text="商品详情"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/text_biankuang"
+            android:textColor="@color/darkslategrey"
+            android:text="预定须知"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            />
+
+        <TextView
+            android:id="@+id/tv_find_des_ydxz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:background="@drawable/text_bk_lrb"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="@drawable/text_biankuang"
+            android:textColor="@color/darkslategrey"
+            android:text="收货方式"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/text_bk_lrb"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            android:paddingBottom="@dimen/dp10"
+            >
+
+            <TextView
+                android:id="@+id/tv_find_des_xffs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/dp5"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/icon_find_des_xffs"
+                />
+
+            <View
+                style="@style/divider_horizontal"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"/>
+
+            <TextView
+                android:id="@+id/tv_find_des_lxfs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/btn_find_des_xianj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="@dimen/dp5"
+                />
+
+            <Button
+                android:padding="@dimen/dp5"
+                android:id="@+id/btn_find_des_reserve"
+                android:layout_width="wrap_content"
+                android:onClick="click"
+                android:textColor="@color/white"
+                android:background="@color/RED_TEXT"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

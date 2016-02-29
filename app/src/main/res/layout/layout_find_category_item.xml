@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:padding="@dimen/dp10"
+        android:id="@+id/tv_find_category_item"
+        android:gravity="center"
+        android:text="早教"
+        android:background="@drawable/relativelayout"
+        android:textColor="@color/RED_TEXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View style="@style/divider_horizontal"/>
+
+</LinearLayout>

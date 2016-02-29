@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/edit_rl"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/address_btn_normal"
+            android:textColor="@color/black"
+            android:hint="请输入手机号"/>
+
+        <RelativeLayout
+            android:id="@+id/cade_password_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/user_name">
+
+            <EditText
+                android:id="@+id/cade_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="10dp"
+                android:layout_toLeftOf="@+id/get_code"
+                android:background="@drawable/address_btn_normal"
+                android:textColor="@color/black"
+                android:hint="请输入验证码"/>
+            
+            <Button
+                android:id="@+id/get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/get_code"
+                android:text="获取验证码"
+                 />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/register_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/edit_rl"
+        android:background="@color/red"/>
+
+
+</RelativeLayout>

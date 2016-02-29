@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shiliuke.BabyLink"
+    android:installLocation="preferExternal"
+    android:versionCode="8"
+    android:versionName="@string/vistion">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- renren sso Permission for Unit Test -->
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- 百度定位 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.shiliuke.global.MApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+
+        <!-- key:开发者申请的key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="uGOzyCRdjaKfIhfUvvERgbMp" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- tab标签 -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- tab标签 -->
+        <activity
+            android:name=".MainTab"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 登陆 -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 注册 -->
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 忘记密码 -->
+        <activity
+            android:name=".ForgetPassActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 完善资料 -->
+        <activity
+            android:name=".CompleteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 服务协议 -->
+        <activity
+            android:name=".ServiceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 活动详情 -->
+        <activity
+            android:name=".ExerciseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 报名 -->
+        <activity
+            android:name=".ApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 置换详情 -->
+        <activity
+            android:name=".ChangeInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 发布活动 -->
+        <activity
+            android:name=".IssueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <!-- 发布活动——发布 -->
+        <activity
+            android:name=".SendIssueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="com.choose.SendIssueActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 发布话题 -->
+        <activity
+            android:name=".SendTopicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="com.choose.SendTopicActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 秀一下 -->
+        <activity
+            android:name=".SendShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="com.choose.SendShowActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 发布置换 -->
+        <activity
+            android:name=".SendChangeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="com.choose.SendChangeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 秀逗____逗一逗 -->
+        <activity
+            android:name=".StickerModifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="com.shiliuke.StickerModifyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 我的活动 -->
+        <activity
+            android:name=".MeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 我的话题 -->
+        <activity
+            android:name=".MeTopicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 我的话题详情 -->
+        <activity
+            android:name=".MeTopicInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 我的主页 -->
+        <activity
+            android:name=".MeHomePage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 我的兑换码 -->
+        <activity
+            android:name=".MeConvertCodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 发现详情 -->
+        <activity
+            android:name=".FindDesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 未消费(已消费)——兑换码 -->
+        <activity
+            android:name=".UnconsumeCodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 支付尾款 -->
+        <activity
+            android:name=".PayEndActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 我的置换 -->
+        <activity
+            android:name=".MeChangeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- &lt;!&ndash; 我的秀逗 &ndash;&gt; -->
+        <!-- <activity -->
+        <!-- android:name=".MeShowBeanActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustPan|stateHidden" > -->
+        <!-- </activity> -->
+        <!-- 我的好友 -->
+        <activity
+            android:name=".MeFriendsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 我的订单 -->
+        <activity
+            android:name=".MeOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 个人资料 -->
+        <activity
+            android:name=".PersonalData"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 修改电话 -->
+        <activity
+            android:name=".UpdatePnumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 修改密码 -->
+        <activity
+            android:name=".UpdatePWActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <!-- 帮助中心 -->
+        <activity
+            android:name=".HelpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 邀请好友 -->
+        <activity
+            android:name=".InvitefriendsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 未消费(已消费)——兑换码 -->
+        <activity
+            android:name=".UnconsumeCode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 我的置换 -->
+        <activity
+            android:name=".MeChange"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 我的秀逗 -->
+        <activity
+            android:name=".MeShowBeanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 第三方登录界面 -->
+        <activity
+            android:name=".OtherCompleteActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 支付页面 -->
+        <activity
+            android:name=".PayMentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- fensi -->
+        <activity
+            android:name=".MeFansActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 定位小区 -->
+        <activity
+            android:name=".LocationAreaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 选择城市 -->
+        <activity
+            android:name=".CityChoiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 关于我们 -->
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx0fbabc189e400940" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <receiver android:name=".wxapi.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 友盟AppKey， 需要替换成你自己的 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="562d96b0e0f55ae8010013b6" />
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!-- alipay sdk end -->
+
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104869195" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name=".HtmlTextActivity"
+            android:label="@string/title_activity_html_text"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".InvitListActivity"
+            android:label="@string/title_activity_invit_list"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MeOrderDesActivity"
+            android:label="@string/title_activity_me_order_des"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".UpdateNameActivity"
+            android:label="@string/title_activity_me_order_des"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".chooseimage.CutImageActivity"
+            android:label="@string/title_activity_cut_image"
+            android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService"></service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name=".RegistrationDetailActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

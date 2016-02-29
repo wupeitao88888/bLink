@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="@dimen/dp5"
+              android:background="@drawable/relativelayout"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp5"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_beanshow_item_head"
+            android:layout_width="40dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_beanshow_item_head"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_beanshow_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp18"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_beanshow_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_beanshow_item_addfocus"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:text="加关注"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/btn_redbg"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_height="350dp">
+
+        <ImageView
+
+            android:id="@+id/sticker_image_beanshow_item"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.shiliuke.view.stickerview.StickerView
+            android:id="@+id/sticker_beanshow_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_gravity="right"
+        >
+
+        <TextView
+            android:id="@+id/tv_beanshow_item_dou"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/tv_beanshow_item_dou_text"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp16"
+            android:text="逗"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_beanshow_item_msg"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dp5"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_beanshow_item_dou"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/white"
+            android:text="逗一逗"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@mipmap/btn_redbg"
+            />
+
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/btn_beanshow_item_share"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/btn_bg_share"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp5"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_beanshow_item_zan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/price_image"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_beanshow_item_zan"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/newPhoneNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:background="@color/white"
+            android:hint="请输入新的手机号"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/identifying_code"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:background="@color/white"
+            android:hint="请输入验证码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/send_identifying_code"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/send_identifying_code"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/get_code"
+            android:text="获取验证码"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:background="@drawable/button_normal"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

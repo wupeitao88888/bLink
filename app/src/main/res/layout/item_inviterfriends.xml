@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:padding="@dimen/dp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/image_item_inviterfriends_head"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp5"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/image_item_inviterfriends_head"
+        android:id="@+id/tv_item_inviterfriends_name"
+        android:textSize="@dimen/sp14"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_inviterfriends_source"
+        android:textSize="@dimen/sp12"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_alignLeft="@id/tv_item_inviterfriends_name"
+        android:layout_below="@id/tv_item_inviterfriends_name"
+        android:text="关注的好友"
+        />
+
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_item_inviterfiends_inviter"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_btn_inviterfriends"
+        />
+
+</RelativeLayout>

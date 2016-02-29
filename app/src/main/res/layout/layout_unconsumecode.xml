@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical"
+              android:paddingTop="7dp">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@drawable/relativelayout_right_angle"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/unconsume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="买卖卷顶顶顶顶"
+            android:textColor="@color/black_e1"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/unconsume_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unconsume_title"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="15dp"
+            android:text="有效期。。。。。。"
+            android:textColor="@color/black_e0"
+            android:textSize="14dp"/>
+
+
+        <ImageView
+            android:id="@+id/unconsum_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/mm_submenu_normal"/>
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/unconsume_endtime"
+            android:layout_margin="15dp"
+            android:background="@color/gray"
+            android:layerType="software"/>
+
+
+        <TextView
+            android:id="@+id/unsonsume_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_margin="15dp"
+            android:text="密码：33333333333333333"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+
+        <ImageView
+            android:id="@+id/code_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/unsonsume_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/gray"
+            />
+
+        <ImageView
+            android:id="@+id/xiaofei"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/code_image"
+            android:layout_alignTop="@+id/code_image"
+            android:layout_marginTop="-30dp"
+            android:visibility="gone"
+            android:layout_marginLeft="-30dp"
+            android:background="@drawable/xiaofei"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_find_des_goods"
+        android:drawableRight="@mipmap/youjianhese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/darkslategrey"
+        android:layout_margin="@dimen/dp5"
+        android:background="@drawable/text_biankuang"
+        android:clickable="true"
+        android:onClick="click"
+        android:text="商品详情"
+        />
+</LinearLayout>

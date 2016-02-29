@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/relativelayout"
+        android:paddingBottom="7dp">
+
+        <TextView
+            android:id="@+id/unconsume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="买卖卷顶顶顶顶"
+            android:textColor="@color/black_e1"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unconsume_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unconsume_title"
+            android:layout_marginLeft="15dp"
+            android:text="有效期。。。。。。"
+            android:textColor="@color/black_e0"
+            android:layout_marginBottom="15dp"
+            android:textSize="14dp" />
+
+
+        <ImageView
+            android:id="@+id/unconsum_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/mm_submenu_normal"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/unconsume_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unconsume_title"
+            android:layout_marginLeft="15dp"
+            android:text="21"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/unconsum_arrow"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_e1"
+            android:layout_marginBottom="15dp"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

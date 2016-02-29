@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/edit_rl"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/psw_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/login_youke_btn_bg_nomal"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:hint="请输入密码"/>
+
+                    <EditText
+                        android:id="@+id/commit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/login_youke_btn_bg_nomal"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="1px"
+                        android:layout_below="@+id/password"
+                        android:hint="请确认密码"/>
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/city_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/login_youke_btn_bg_nomal"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/psw_rl"
+                    android:focusable="false"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:hint="请选择您所在的城市"/>
+
+                <EditText
+                    android:id="@+id/area_edit"
+                    android:layout_below="@+id/city_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/login_youke_btn_bg_nomal"
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:layout_marginTop="1px"
+                    android:textSize="16dp"
+                    android:hint="请选择你所在的小区"/>
+
+                <EditText
+                    android:id="@+id/baby_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/login_youke_btn_bg_nomal"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/area_edit"
+                    android:hint="请输入宝宝的名字或昵称"/>
+
+                <RelativeLayout
+                    android:id="@+id/radio_rl"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/baby_name"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/man_torc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        >
+                        <RadioButton
+                            android:id="@+id/man_radio"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:gravity="center"
+                            android:button="@null"
+                            android:checked="true"
+                            android:clickable="false"
+                            android:background="@drawable/radio_btn_selector"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="1dp"
+                            android:text="男宝宝"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/girl_torc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/man_torc"
+                        android:gravity="center_vertical"
+                        >
+                        <RadioButton
+                            android:id="@+id/girl_radio"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:gravity="center"
+                            android:button="@null"
+                            android:checked="true"
+                            android:clickable="false"
+                            android:background="@drawable/radio_btn_selector"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginBottom="1dp"
+                            android:text="女宝宝"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/login_youke_btn_bg_nomal"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:focusable="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/radio_rl"
+                    android:hint="选择宝宝出生日期"/>
+                <EditText
+                    android:id="@+id/baby_family"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/login_youke_btn_bg_nomal"
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:textSize="16dp"
+                    android:layout_below="@id/birthday"
+                    android:hint="请选择您与宝宝的关系"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/register_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_below="@id/edit_rl"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:background="@drawable/red_btn_bg"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:background="@drawable/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/image_item_find_topbg"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/bg_find_item_lefttop"
+                android:paddingTop="@dimen/dp5"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:id="@+id/tv_item_find_top"
+                android:layout_marginLeft="@dimen/dp5"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp16"
+                android:id="@+id/tv_item_find_title"
+                android:textColor="@color/black"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_item_find_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/black"
+                android:text="价格："
+                android:layout_toLeftOf="@id/tv_item_find_price"
+                />
+        </RelativeLayout>
+
+        <View style="@style/divider_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            >
+
+            <TextView
+                android:id="@+id/tv_item_find_distance"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_alignParentRight="true"
+                />
+
+            <TextView
+                android:layout_toLeftOf="@id/tv_item_find_distance"
+                android:layout_marginRight="@dimen/dp10"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:id="@+id/tv_item_find_address"
+                android:drawableLeft="@mipmap/icon_find_address_left"
+                android:drawablePadding="@dimen/dp5"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

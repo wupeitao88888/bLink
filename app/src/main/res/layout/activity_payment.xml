@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/background"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_payment_title"
+        android:layout_margin="@dimen/dp10"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_payment_paytitle"
+            android:text="支付定金"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:text=":"
+            android:textSize="@dimen/sp18"
+            android:layout_marginRight="@dimen/dp3"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="¥"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/RED_TEXT"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/RED_TEXT"
+            android:id="@+id/tv_payment_price"
+            android:gravity="center"
+            android:text="22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_payment_title"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:padding="@dimen/dp10"
+            android:text="支付方式"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View style="@style/divider_horizontal"/>
+
+        <RadioGroup
+            android:padding="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_payment_weixin"
+                android:button="@drawable/ad_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="微信支付"
+                android:padding="@dimen/dp10"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:layout_marginTop="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                android:button="@drawable/ad_selector"
+                android:textColor="@color/black"
+                android:id="@+id/radio_payment_zhifubao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付宝支付"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:text="立即付款"
+        android:textColor="@color/white"
+        android:background="@drawable/button_normal_long"
+        android:onClick="okClick"
+        android:layout_margin="@dimen/dp10"
+        android:layout_height="40dp"/>
+</RelativeLayout>

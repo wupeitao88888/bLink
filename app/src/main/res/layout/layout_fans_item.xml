@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/friends_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:id="@+id/friends_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/friends_pic"
+            android:textColor="@color/black_e1"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/friends_remove"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="加关注"
+            android:textColor="@color/white"
+            android:background="@drawable/button_normal"
+            android:textSize="14dp" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

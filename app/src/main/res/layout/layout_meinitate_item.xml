@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/relativelayout"
+        android:paddingBottom="13dp">
+
+        <ImageView
+            android:id="@+id/initate_pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:background="@color/gray"/>
+
+
+        <TextView
+            android:id="@+id/initate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/initate_pic"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/initate_pic"
+            android:text="周末干啥去呢？"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/initate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/initate_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/initate_pic"
+            android:text="2015/11/11 11:11"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/initate_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/initate_pic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/initate_pic"
+            android:text="报名人数"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/initate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/initate_pic"
+            android:layout_toRightOf="@+id/initate_count_text"
+            android:text="10人"
+            android:visibility="invisible"
+            android:textColor="#AE1F5C"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/initate_status"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:text="进行中"
+            android:textSize="14dp"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/initate_count"
+            android:background="@drawable/button_normal"
+            android:textColor="@drawable/selector_button_normal"
+            />
+
+        <ImageView
+            android:id="@+id/image_meinitate_item_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_informatioin_edit"
+            android:layout_marginRight="@dimen/dp20"
+            />
+
+        <TextView
+            android:id="@+id/tv_information_edit"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            style="@style/textview_information"/>
+
+        <ImageView
+            android:id="@+id/image_meinitate_item_person"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/image_meinitate_item_edit"
+            android:src="@mipmap/icon_informatioin_person"
+            android:layout_marginRight="@dimen/dp10"
+            />
+
+        <TextView
+            android:id="@+id/tv_information_person"
+            android:layout_toLeftOf="@id/image_meinitate_item_edit"
+            style="@style/textview_information"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

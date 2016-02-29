@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_share_pop_top"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_share_wxpyq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/btn_share_wxpyq"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="微信朋友圈"/>
+
+            <TextView
+                android:id="@+id/tv_share_wx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/btn_share_wx"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="微信好友"/>
+
+            <TextView
+                android:id="@+id/tv_share_xlwb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/btn_share_xlwb"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="新浪微博"/>
+
+            <TextView
+                android:id="@+id/tv_share_qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/btn_share_qq"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="qq"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_share_dx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="短信"/>
+
+
+            <TextView
+                android:id="@+id/tv_share_yj"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="邮件"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_share_pop_top"
+        android:background="#55000000"
+        android:orientation="vertical"
+        android:visibility="visible"/>
+
+</RelativeLayout>

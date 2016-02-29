@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/old_pw"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:background="@color/white"
+            android:hint="请输入旧密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/new_pw"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:layout_toLeftOf="@+id/send_identifying_code"
+            android:background="@color/white"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/re_new_pw"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:layout_toLeftOf="@+id/send_identifying_code"
+            android:background="@color/white"
+            android:hint="请确认新密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_normal"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

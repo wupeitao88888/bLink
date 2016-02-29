@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <com.shiliuke.view.PullToRefresh.PullToRefreshLayout
+        android:id="@+id/exrcise_PullToRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <com.shiliuke.view.PullToRefresh.PullableListView
+            android:id="@+id/exrcise_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:cacheColorHint="#fff"></com.shiliuke.view.PullToRefresh.PullableListView>
+
+        <include layout="@layout/load_more" />
+
+
+    </com.shiliuke.view.PullToRefresh.PullToRefreshLayout>
+
+
+
+
+</RelativeLayout>

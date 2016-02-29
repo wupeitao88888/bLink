@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_exit_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/dialog_top"
+        >
+   		 <TextView
+		      android:id="@+id/title"
+		      android:layout_width="match_parent"
+		      android:layout_height="wrap_content"
+		      android:gravity="center"
+		      android:paddingTop="10dip"
+		      android:paddingBottom="5dip"
+		      android:textStyle="bold"
+		      android:text="提示信息"
+		      android:layout_centerInParent="true"
+		      android:textColor="@color/black"
+		      android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:paddingTop="10dip"
+        android:paddingBottom="15dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:lineSpacingExtra="3dip"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#D7D7D7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <View 
+            android:id="@+id/vertical_line"
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:background="#D7D7D7"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/positive"
+            />
+        <TextView
+            android:id="@+id/positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/vertical_line"
+            android:background="@drawable/dialog_leftbt_selector"
+            android:padding="12dip"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/vertical_line"
+            android:background="@drawable/dialog_rightbt_selector"
+            android:padding="12dip"
+            android:gravity="center"
+            android:text="拨号"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

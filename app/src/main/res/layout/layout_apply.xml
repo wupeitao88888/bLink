@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/relativelayout"
+        android:paddingBottom="3dp">
+
+        <EditText
+            android:id="@+id/exercise_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:hint="请输入姓名"
+            android:textSize="13dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black_e1"
+            android:textColorHint="#A4A4A4"  />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/exercise_name"
+            android:background="@color/background" />
+
+        <EditText
+            android:id="@+id/exercise_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/white"
+            android:inputType="phone"
+            android:hint="请输入联系方式"
+            android:textSize="13dp"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/black_e1"
+            android:textColorHint="#A4A4A4"  />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/exercise_phone"
+            android:background="@color/background" />
+
+        <EditText
+            android:id="@+id/exercise_peoplecount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/line1"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/white"
+            android:inputType="number"
+            android:hint="请输入报名人数"
+            android:textCursorDrawable="@null"
+            android:textSize="13dp"
+            android:textColor="@color/black_e1"
+            android:textColorHint="#A4A4A4" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/input"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_normal_long"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:text="提交" />
+
+
+</RelativeLayout>

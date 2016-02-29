@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shiliuke.view.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#DF7599">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/pop"
+                android:layout_width="wrap_content"
+                android:layout_toLeftOf="@+id/oo_re"
+                android:layout_height="48dp">
+
+                <ImageButton
+                    android:id="@+id/btn_face"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_marginLeft="13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    android:background="@mipmap/chat_face" />
+
+                <EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btn_face"
+                    android:background="@drawable/relativelayout"
+                    android:layout_centerVertical="true"
+                    android:inputType="textMultiLine"
+                    android:minLines="6"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_e1"
+                    android:textColorHint="@color/gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/oo_re"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                >
+
+                <!-- 发送按钮 -->
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@mipmap/send_bt"
+                    android:text="发送"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black_e1"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_facechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:layout_below="@id/rl_input"
+        android:background="@color/sdk_chat_ll_facechoose_color"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_contains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dip"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+    </RelativeLayout>
+
+
+</com.shiliuke.view.FaceRelativeLayout>

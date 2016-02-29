@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <RelativeLayout
+            android:id="@+id/top_issue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <GridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="5"
+                android:verticalSpacing="5dp">
+            </GridView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/activity_introduce_e"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/top_issue"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/relativelayout">
+
+
+            <EditText
+                android:id="@+id/change_article_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:maxLength="200"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp"
+                android:background="@color/white"
+                android:hint="@string/change_article_name"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/transparent_black"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/activity_introduce_h"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/activity_introduce_e"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/relativelayout">
+
+
+            <EditText
+                android:id="@+id/change_want_article_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:maxLength="200"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp"
+                android:background="@color/white"
+                android:hint="@string/change_want_article_name"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/transparent_black"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_introduce_re"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/activity_introduce_h"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/relativelayout">
+
+
+            <EditText
+                android:id="@+id/change_article"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/share"
+                android:layout_margin="13dp"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:hint="@string/change_article"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:maxLines="13"
+                android:textCursorDrawable="@null"
+                android:textSize="15dp"
+                android:textColorHint="@color/transparent_black"
+                />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/certain"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="okClick"
+            android:text="发布"
+            android:background="@drawable/button_normal_long"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
